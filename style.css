@@ -1,155 +1,106 @@
-/* Reset some basic elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "utf-8";
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
 
-/* Header styles */
-header {
-    background-color: #f4f4f4;
-    padding: 1rem;
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 40px;
+    width: 300px;
+    height: 50px;
+    white-space: nowrap;
+  }
+
+  body {
+    background-color: #cec8c2;
+  }
+  p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+  }
+
+button { 
+    background-color: rgb(0, 0, 0);
+    color: #cec8c2;
+    padding: 10px 20px;
+    font-size: 20px;
+
+
+}
+button:hover {
+    background-color: #D9BFA9;
+    color:black;
+}
+nav {
     display: flex;
+    align-items: right;
     justify-content: space-between;
-    align-items: center;
-}
+    background-color:#8a4552;
+    padding: 10px 20px;
 
-.logo {
-    width: 80px;
-    height: auto;
 }
-
+nav input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
 nav ul {
     display: flex;
+    gap: 20px;
     list-style: none;
 }
-
-nav ul li {
-    margin-left: 1rem;
-}
-
-nav ul li a {
+nav a {
+    color: #e5acbe;
+    font-family: Georgia;
     text-decoration: none;
-    color: #333;
 }
-
-/* Main content styles */
-main {
-    padding: 2rem;
+nav a:hover {
+    color: #D9BFA9;
 }
+    
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+.newspaper {
+   font-family: Georgia;
+    color: azure;
+    text-align: center;
+    font-family: Georgia;
+    background-image: url(../Images/newspaper_sectionbackground.png);    
+}
+.about {
+    font-family: Georgia;
+    text-align: justify;
+    background-image: url(../Images/foundersphoto.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 35%;
 
+}
+h2 {
+    text-align: center;
+    padding-bottom: 5%;
+    font-family: Georgia;
+
+}
+.product {
+    text-align: center;
+    padding: auto;
+    font-family: Georgia;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+}
 .hero {
-    position: relative; /* Allow absolute positioning for the text overlay */
-    background-image: url('images/headerbackdrop.png'); /* Set the background image */
-    background-size: cover; /* Make the background cover the entire section */
-    background-position: center; /* Center the background image */
-    color: black; /* Text color */
-    padding: 2rem; /* Add padding */
-    height: 400px; /* Set a specific height for the hero section */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between the text and image */
-    align-items: center; /* Center items vertically */
+    background-image: url(../Images/headerbackdrop.png);
+    font-family: Georgia;
 }
-
-.text-overlay {
-    position: relative; /* This should be relative to stay in the flow */
-    text-align: left; /* Align text to the left */
-    z-index: 1; /* Make sure it's above the background */
+#myBtn {
+    display: none;
 }
-
-.overlay-image {
-    width: 500px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 2; /* Ensure it appears above the background */
-    margin-left: auto; /* Push to the right */
-}
-
-.hero h1, .hero p {
-    margin: 0.5rem 0; /* Adjust margins for spacing */
-}
-
-.hero button {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent button for contrast */
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.product-gallery {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-.product-gallery figure {
-    width: 30%;
-}
-
-.product-gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-footer nav ul {
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-footer nav ul li a {
-    color: #fff;
-}
-
-.social-icons a {
-    color: #fff;
-    margin: 0 0.5rem;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .product-gallery {
-        flex-direction: column;
-    }
-
-    .product-gallery figure {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
-.cta {
-    position: relative; /* Allow pseudo-elements or overlays */
-    background-image: url('images/newspaper_sectionbackground.png'); /* Replace with your image */
-    background-size: cover; /* Ensure the image covers the whole section */
-    background-position: center; /* Center the background */
-    background-repeat: no-repeat; /* Prevent tiling */
-    padding: 4rem; /* Add spacing inside the section */
-    text-align: center;
-    color: white; /* Ensure text is visible on the background */
-    margin-top: 2rem;
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
-
-/* Optional: Add an overlay to improve readability */
-.cta::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: 

@@ -1,79 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be Beautiful And Powerful</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/Style.css">
 </head>
-<body>
+
+<body class="Navbar">
+	
     <header>
-        <img src="images/logo.png" alt="Be Beautiful And Powerful Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#home">Home</a></li>
+	
+		<nav>
+			<img src="Images/Logo.png" alt="Logo image" width="80" height="80">
+			<ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About Us</a></li>
+                <input type="text" placeholder="Search..">
+	
+	
             </ul>
         </nav>
-    </header>
+	
+	
 
-    <main>
-        <section class="hero">
-            <div class="text-overlay"> 
-                <h1>Be Beautiful And Powerful</h1>
-                <p>Live life with style and bags that can handle your power and your beauty's every whim</p>
-                <button>What's my perfect bag?</button>
-            </div>
-            <img src="images/headerfaceimage.png" alt="Decorative Image" class="overlay-image">
-        </section>
-        
-        
+	</header>
+    
+    <section class="hero">
+    
+            <h1> Be beautiful and powerful </h1>
+            <p>Live life well, get a bag that can handle your power and your beauty every day.</p>
+            <button> <p>What's my perfect bag</p> </button>
+            <img src="Images/headerfaceimage.png" alt="Face image in header" width="600" height="300">
+    
+     </section>
+    
+    <section class="product">
+    
+            <P>Your bag is your partner through it all,every lifestyle and personality should have a bag to suit. From color and size to handle and buckle we know it's all in the details.</P>
+            <p>Check out some of our main staples and explore your tastes!</p>
+            <img src="Images/productimage1.png" alt="bag 1" width="200" height="300">
+            <img src="Images/productimage2.png" alt="bag 2" width="200" height="300">
+            <img src="Images/productimage3.png" alt="bag 3" width="200" height="300">
+            
+    
+     </section>
+    
+    <section class="newspaper">
+    
+            <h2>Want To Hear More?</h2>
+            <P>Fill out this short form to be added to our newsletter!</P>
+            <a href="https://forms.gle/xCeg7Pyn4t16yuc97" style="text-decoration: none;">
+                <button style="color: black; padding-left: 2.5%; padding-right: 2.5%;">
+                <p style="color: bisque;"> Sign Up! </p>
+                
+                </button>
+            </a>
+    
+     </section>
+    
+     <section class="about">
+    
+            <h2>About Us!</h2>
+           <P> At our company, we believe that handbags should be both beautiful and functional, 
+            seamlessly blending style with everyday practicality. Our journey began with a clear vision 
+            to create stylish purses that empower women to express their unique individuality while meeting 
+            the demands of modern life. Each piece is thoughtfully designed with smart organizational elements 
+            to enhance your lifestyle, proving that fashion and utility can truly coexist, allowing you to feel confident, 
+            elegant, and chic no matter where your day takes you.</P>
+    
+           </section>
 
-        <section class="products">
-            <h2>Check out some of our main staples and explore your tastes!</h2>
-            <div class="product-gallery">
-                <figure>
-                    <img src="images/productimage1.png" alt="Product Image 1">
-                    <figcaption>Description of Product 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/productimage2.png" alt="Product Image 2">
-                    <figcaption>Description of Product 2</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/productimage3.png" alt="Product Image 3">
-                    <figcaption>Description of Product 3</figcaption>
-                </figure>
-            </div>
-        </section>
-        
+	
+	
 
-        <section class="cta">
-            <h2>More to be desired?</h2>
-            <p>There are always other fish in the sea. Check out the rest of our options and start your next search</p>
-            <button>Show Me My Options</button>
-        </section>
+	<footer>
+	
+		<nav>
+            
+			<ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About Us</a></li>
+                <li onclick="topFunction()"></li>
 
-        <section id="about">
-            <h2>Us</h2>
-            <p>At our core, we believe that handbags should be both beautiful and functional. With a clear vision to create stylish and practical bags, we aim to empower women to express their unique identity...</p>
-            <img src="Images/foundersphoto.png" alt="About Us">
-        </section>
-    </main>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#shop">Shop</a></li>
-            </ul>
-        </nav>
-        <div class="social-icons">
-            <img src="Images/socials.png" alt="social-icons">
-        </div>
-    </footer>
-</body>
-</html>
+
+                </ul>
+
+                <button style="position: fixed; right: 50px; bottom: 100px;" onclick="topFunction()" id="myBtn">
+                    Top 
+                    
+                </button>
+            </nav>
+    
+        </footer>
+
+
+        <script>
+            // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+
+            console.log(document.documentElement.scrollTop);
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        </script>
+	
+	
+    </body>
